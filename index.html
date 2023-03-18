@@ -1,17 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"
+	      content="ie=edge">
 	<title>My Slider</title>
+	<style>
+		.slider {
+			width: 640px;
+			height: 360px;
+			margin: 0 auto;
+		}
+		.slider img {
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 	<header>
-		<h1>Welcome to my custom Slider</h1>
+		<h1 style="text-align: center;">Welcome to my custom Slider</h1>
 	</header>
 	<main>
-		<section>
-		
+		<section class="slider">
+			<img id="slider-image" src="images/pic-1.jpg" alt="">
 		</section>
 	</main>
+	
+	<script src="js/slider.js"></script>
 </body>
 </html>
