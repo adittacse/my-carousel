@@ -11,11 +11,13 @@ const images = [
 ];
 
 let imageIndex = 0;
+const imageElement = document.getElementById("slider-image");
 setInterval(() => {
     if (imageIndex === images.length) {
         imageIndex = 0;
     }
     const imageURL = images[imageIndex];
-    console.log(imageIndex, imageURL);
+    imageElement.src = imageURL;
+    // imageElement.setAttribute("src", imageURL);
     imageIndex++;
 }, 1000);
